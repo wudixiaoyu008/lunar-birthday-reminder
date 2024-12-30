@@ -82,7 +82,7 @@ export default function BirthdayForm({
       </div>
       
       {birthdays.length > 0 && (
-        <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+        <div className="mb-8 p-4 bg-gray-50 dark:bg-neutral-800 rounded-lg">
           <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">
             Added Birthdays:
           </h3>
@@ -90,7 +90,7 @@ export default function BirthdayForm({
             {birthdays.map((birthday, index) => (
               <li 
                 key={index}
-                className="flex justify-between items-center p-3 bg-white dark:bg-gray-600 rounded-md shadow-sm"
+                className="flex justify-between items-center p-3 bg-white dark:bg-neutral-700 rounded-md shadow-sm"
               >
                 <span className="text-gray-700 dark:text-gray-200">
                   {birthday.name} - {birthday.lunarBirthday.month}/{birthday.lunarBirthday.day}
